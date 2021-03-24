@@ -31,3 +31,18 @@ example:
 it's better also verify that the front is fetching to the correct API_URL.
 * so you can open in your editor t**est-phone-catalogue/src/utils/constants/index.js** file
 * then at the object variable in property API modify the baseUrl property with the api url, in my case it was http://localhost:3000/ DON'T FORGET THE SLASH "/" SYMBOL AT THE END OF THE API URL  
+
+example:
+
+
+export const constants = {
+    API: {
+        baseUrl: 'http://localhost:3000/', // SET THE API URL HERE
+        phones: 'phones/',
+        getImageUri: function (image) {
+            if (!image) return null
+            return this.baseUrl + 'images/' + image
+        }
+    }
+}
+
