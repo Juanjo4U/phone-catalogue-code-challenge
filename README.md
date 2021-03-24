@@ -18,6 +18,12 @@ it's better to verify than the front can access to the back.
 * so you can open in your editor **phone-catalogue/utils/origins.js** file
 * then at the object variable origin add the front address, in my case it was 'http://localhost:3001'.
 
+example: 
+
+<addr>const origins = {
+    test: 'http://localhost:3001' //SET THE ORIGIN TO ALLOW ACCESS HERE
+} </addr>
+
 <h3>FrontEnd Config</h3>
 
 it's better also verify that the front is fetching to the correct API_URL.
