@@ -20,9 +20,11 @@ it's better to verify than the front can access to the back.
 
 example: 
 
-<addr>const origins = {
-    test: 'http://localhost:3001' //SET THE ORIGIN TO ALLOW ACCESS HERE
-} </addr>
+<addr>
+    const origins = {
+        test: 'http://localhost:3001' //SET THE ORIGIN TO ALLOW ACCESS HERE
+    } 
+</addr>
 
 <h3>FrontEnd Config</h3>
 
