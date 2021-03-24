@@ -1,9 +1,17 @@
-import { createStore, applyMiddleware } from "redux";
 import logger from 'redux-logger';
-import thunk from 'redux-thunk';
-import { onAppRuns } from "./onAppRuns";
-import { rootReducer } from "./states";
+import createSagaMiddleware from "redux-saga";
+import { configureStore } from '@reduxjs/toolkit';
+import { rootReducer } from './states';
+import { onAppRuns } from './onAppRuns';
+import { rootSaga } from './sagas';
 
-export const store = createStore(rootReducer, applyMiddleware(thunk, logger));
+const sagaMiddleware = createSagaMiddleware();
+
+export const store = configureStore({
+    reducer: rootReducer,
+    middleware: getDefaultMiddleware => [...getDefaultMiddleware(), sagaMiddleware, logger]
+})
+
+sagaMiddleware.run(rootSaga);
 
 if (store.dispatch) onAppRuns(store.dispatch);

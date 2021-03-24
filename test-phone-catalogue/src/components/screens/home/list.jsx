@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { requestAllPhones } from "../../../redux/toolkitStates/phone/actionsDispatch";
+import { requestPhoneList } from "../../../redux/states/phone/actionsUpdate";
 import { getPhoneList, getIsRequestingList, getRequestPhoneListError } from "../../../redux/states/phone/selecters";
 import { ErrorComponent } from "../../common/error";
 import { Spinner } from "../../common/spinner";
@@ -10,7 +10,7 @@ export const PhoneList = () => {
     const isLoading = useSelector(getIsRequestingList);
     const isThereAnErrorRequesting = useSelector(getRequestPhoneListError);
     const dispatch = useDispatch();
-    const requestData = () => dispatch(requestAllPhones());
+    const requestData = () => dispatch(requestPhoneList());
     return isLoading ? <Spinner /> :
         <>
             {!isThereAnErrorRequesting ?

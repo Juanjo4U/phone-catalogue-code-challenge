@@ -1,11 +1,5 @@
-/* import { requestAllPhones } from "../states/phone/actionsDispatch"
+import { requestPhoneList } from "../states/phone/actionsUpdate"
 
 export const onAppRuns = (dispatch) => {
-    dispatch(requestAllPhones());
-} */
-
-import { requestAllPhones } from "../toolkitStates/phone/actionsDispatch"
-
-export const onAppRuns = (dispatch) => {
-    dispatch(requestAllPhones());
+    dispatch(requestPhoneList());
 }

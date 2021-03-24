@@ -1,24 +1,7 @@
-import {
-    SET_PHONE_LIST, SET_IS_REQUESTING_PHONE_LIST, SET_REQUEST_PHONE_LIST_ERROR
-} from "./types";
+import { REQUEST_ALL_PHONE_LIST } from "../../sagas/phone/types";
 
-export const setAllPhoneList = (phones = []) => (
+export const requestPhoneList = () => (
     {
-        type: SET_PHONE_LIST,
-        payload: phones
-    }
-)
-
-export const setPhoneListLoader = (isLoading) => (
-    {
-        type: SET_IS_REQUESTING_PHONE_LIST,
-        payload: isLoading
-    }
-);
-
-export const setRequestPhoneListError = (error) => (
-    {
-        type: SET_REQUEST_PHONE_LIST_ERROR,
-        payload: error
+        type: REQUEST_ALL_PHONE_LIST,
     }
 );

@@ -1,6 +1,5 @@
-import { combineReducers } from "redux";
-import phone from "./phone/reducer";
+import phone from "./phone";
 
-export const rootReducer = combineReducers({
+export const rootReducer = {
     phone
-})
+}
