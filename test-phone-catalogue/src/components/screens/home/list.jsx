@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { requestAllPhones } from "../../../redux/states/phone/actionsDispatch";
+import { requestAllPhones } from "../../../redux/toolkitStates/phone/actionsDispatch";
 import { getPhoneList, getIsRequestingList, getRequestPhoneListError } from "../../../redux/states/phone/selecters";
 import { ErrorComponent } from "../../common/error";
 import { Spinner } from "../../common/spinner";

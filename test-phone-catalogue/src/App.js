@@ -1,7 +1,7 @@
 import './styles/index.css';
 import './styles/spinner/index.css';
 import { Provider } from "react-redux";
-import { store } from "./redux";
+import { store } from "./redux/configureStore";
 import Navigation from "./navigation";
 
 const App = () =>
