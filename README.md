@@ -10,7 +10,7 @@ then start the front going to test-phone-catalogue folder: cd test-phone-catalog
 then yarn install or npm install (I used yarn)
 once all modules are installed run the project with: yarn start or npm start
 
-IMPORTANT!!
+IMPORTANT!!\n
 it's better to verify than the front can access to the back.
 so you can open in your editor phone-catalogue/utils/origins.js file
 then at the object variable origin add the front address, in my case it was 'http://localhost:3001'.
