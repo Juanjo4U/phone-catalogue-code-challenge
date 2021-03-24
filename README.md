@@ -15,7 +15,7 @@ once all modules are installed run the project with: yarn start or npm start
 it's better to verify than the front can access to the back.
 <h3>BackEnd Config</h3>
 
-* so you can open in your editor **phone-catalogue/utils/origins.js** file
+* so you can open in your editor **_phone-catalogue/utils/origins.js_** file
 * then at the object variable origin add the front address, in my case it was 'http://localhost:3001'.
 
 example: 
@@ -29,7 +29,7 @@ example:
 <h3>FrontEnd Config</h3>
 
 it's better also verify that the front is fetching to the correct API_URL.
-* so you can open in your editor t**est-phone-catalogue/src/utils/constants/index.js** file
+* so you can open in your editor **_test-phone-catalogue/src/utils/constants/index.js_** file
 * then at the object variable in property API modify the baseUrl property with the api url, in my case it was http://localhost:3000/ DON'T FORGET THE SLASH "/" SYMBOL AT THE END OF THE API URL  
 
 example:
