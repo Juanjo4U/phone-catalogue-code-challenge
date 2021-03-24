@@ -1,7 +1,7 @@
 # phone-catalogue-code-challenge
 phone-catalogue-code-challenge test
 
-#HOW TO RUN THE PROJECT<h1>
+#<h1>HOW TO RUN THE PROJECT</h1>
 
 to start first go to phone-catalogue folder: cd phone-catalogue
 then npm install
@@ -11,7 +11,7 @@ then start the front going to test-phone-catalogue folder: cd test-phone-catalog
 then yarn install or npm install (I used yarn)
 once all modules are installed run the project with: yarn start or npm start
 
-**IMPORTANT!!**
+##<h2>**IMPORTANT!!**</h2>
 it's better to verify than the front can access to the back.
 **BackEnd Config**
 * so you can open in your editor phone-catalogue/utils/origins.js file
