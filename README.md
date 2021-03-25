@@ -51,9 +51,9 @@ example:
     }
 
 
-<h2>**STRUCTURE EXPLANATION**</h2>
+<h2>STRUCTURE EXPLANATION</h2>
 
-<h4>**Why did I decide to use this structure ?**</h4>
+<h4>Why did I decide to use this structure ?</h4>
 
 * it's because I found usefull to separate the use of libraries and not mix it all so as when I have to make an update I know exactly where to go
 * this way to organize also helps me a lot when I find a bug cause just looking at the folder name I know exactly where the error is
