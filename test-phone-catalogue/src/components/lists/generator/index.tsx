@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import DefaultItem from '../items/defaultItem';
 
 interface Props {
-    elements: Array<any>;
+    elements: Array<object>;
     component?: FunctionComponent<any>
 }
 
@@ -11,7 +11,7 @@ export const ListGenerator: FunctionComponent<Props> = ({ elements = [], compone
     if (!length) return null;
     return (
         <div className='listContainer'>
-            {elements.map((element, index) => <Item key={index} isLast={index === (length - 1)} {...element} />)}
+            {elements.map((element, index) => <Item key={index} {...element} />)}
         </div>
     )
 }
