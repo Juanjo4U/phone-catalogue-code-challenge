@@ -60,7 +60,6 @@ example:
 * separating each reducer state with it's actions, selecters, types makes the code easier to read instead of having a large file with many actions and a file with many types or selecters, cause it's awful to find a bug in a file that has thousands of lines, I try not to overpass more than a hundred lines and most of the time I feel better if the file has less than 60 lines XD.
 * having a nice folder, file or function name also helps to read the code easier
 
-with this structure even my friends who don't know much about coding are capable to understand what I'm doing.
 
 I'd like to find a way to make code easier to read so people won't think that coding is hard and that's why I love functional programing and currying pattern cause I think that everyone can know exactly what this function does: 
 
