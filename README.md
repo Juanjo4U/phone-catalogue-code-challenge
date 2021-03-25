@@ -61,4 +61,7 @@ example:
 * having a nice folder, file or function name also helps to read the code easier
 
 with this structure even my friends who don't know much about coding are capable to understand what I'm doing.
-what I'm trying to do is find a way to make code easier to read so people won't think that coding is hard and that's why I love functional programing and currying pattern cause I think that everyone can know exactly what this function does: **_const getPhoneList = fromPhoneGet('phoneList');_**
+
+what I'd like to find a way to make code easier to read so people won't think that coding is hard and that's why I love functional programing and currying pattern cause I think that everyone can know exactly what this function does: 
+
+**_const getPhoneList = fromPhoneGet('phoneList');_**
