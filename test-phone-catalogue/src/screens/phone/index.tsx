@@ -6,13 +6,17 @@ import { Spinner } from "../../components/common/spinner";
 import { PhoneInfo } from "../../components/screens/phone/info";
 import { ErrorComponent } from "../../components/common/error";
 
+interface Phonebase {
+    id?: any
+}
+
 const PhoneDetails = () => {
     const [isLoading, setLoader] = useState(false);
     const [isError, setError] = useState();
     const [phone, setPhone] = useState({});
-    const { id } = useParams();
+    const { id } = useParams<Phonebase>();
     const requestData = () => {
-        setError();
+        setError(undefined);
         setLoader(true);
         fetchGet({ url: constants.API.phones + id })
             .then(setPhone)

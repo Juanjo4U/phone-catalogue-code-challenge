@@ -1,9 +1,10 @@
+import { AnyFunction } from "../../../utils/types_&_interfaces";
 import { pipeFromObj as pipe, getFromObj as get } from "../../../utils/utilities";
 // EMULATING MY OWN LODASH XD!!
 
 const phone = get('phone');
 
-const fromPhoneGet = key => pipe(
+const fromPhoneGet = (key: string): AnyFunction => pipe(
     phone,
     get(key)
 )

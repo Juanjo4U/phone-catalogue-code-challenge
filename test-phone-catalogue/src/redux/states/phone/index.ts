@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export const phoneSlice = createSlice({
     name: 'phone',
@@ -8,14 +8,14 @@ export const phoneSlice = createSlice({
         errorRequestingList: undefined
     },
     reducers: {
-        setAllPhoneList: (state, { payload }) => {
+        setAllPhoneList: (state, { payload }: PayloadAction<any>) => {
             state.phoneList = payload;
             state.errorRequestingList = undefined;
         },
-        setPhoneListLoader: (state, { payload }) => {
+        setPhoneListLoader: (state, { payload }: PayloadAction<boolean>) => {
             state.isRequestingList = payload
         },
-        setRequestPhoneListError: (state, { payload }) => {
+        setRequestPhoneListError: (state, { payload }: PayloadAction<any>) => {
             state.errorRequestingList = payload
         }
     }

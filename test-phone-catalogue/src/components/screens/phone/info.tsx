@@ -1,7 +1,13 @@
+import { FunctionComponent } from "react";
 import { constants } from "../../../utils/constants";
+import { PhoneInterface } from "../../../utils/types_&_interfaces";
 import { Description, Title, Text } from "../../common/text";
 
-export const PhoneInfo = ({ phone }) =>
+interface Props {
+    phone: PhoneInterface
+}
+
+export const PhoneInfo: FunctionComponent<Props> = ({ phone }) =>
     <>
         <Title>{phone.name} - {phone.manufacturer}</Title>
         {phone.imageFileName &&

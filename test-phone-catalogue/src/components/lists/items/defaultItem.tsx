@@ -1,8 +1,15 @@
+import { FunctionComponent } from "react";
 import { Link } from "react-router-dom";
 import { generatePath } from "react-router";
 import routes from '../../../navigation/routes';
 
-const DefaultItem = ({ id, name, manufacturer, isLast }) => {
+interface Phone {
+    id: any;
+    name?: string;
+    manufacturer?: any;
+}
+
+const DefaultItem: FunctionComponent<Phone> = ({ id, name, manufacturer }) => {
     const path = generatePath(routes.phone.path, { id });
     return (
         <Link to={path} className='listItem'>
