@@ -7,7 +7,7 @@ import { REQUEST_ALL_PHONE_LIST } from "./watchedActions/types";
 export function* requestAllPhones(): Generator<StrictEffect> {
     yield put(setPhoneListLoader(true));
     try {
-        const phones = yield call(() => fetchGet({ url: constants.API.phones }));
+        const phones = yield call(fetchGet, { url: constants.API.phones });
         yield put(setAllPhoneList(phones));
     } catch (err) {
         yield put(setRequestPhoneListError(err));
