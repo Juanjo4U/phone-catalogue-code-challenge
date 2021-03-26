@@ -64,3 +64,9 @@ example:
 I'd like to find a way to make code easier to read so people won't think that coding is hard and that's why I love functional programing and currying pattern cause I think that everyone can know exactly what this function does: 
 
 **_const getPhoneList = fromPhoneGet('phoneList');_**
+
+<h4>Why do I use "useState hook" instead of "redux" sometimes?</h4>
+
+the answer is because redux is based in **Observer pattern** which means that when you update the store all components that are listening to redux state are gonna rerender again with the new state.
+
+so sometimes you don't need others screens or components rerender because you just modify a part of the state then instead of using redux state is better to use useState hook so you just rerender the component where the state changes
