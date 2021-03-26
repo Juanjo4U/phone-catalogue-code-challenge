@@ -57,7 +57,7 @@ example:
 
 the answer is because redux is based on **Observer pattern** which means that when you update the store all components that are listening to redux state are gonna rerender again with the new state.
 
-so sometimes you don't need others screens or components rerender because you just modify a part of the state then instead of using redux state is better to use **useState hook** so you just rerender the component where its state changes
+so sometimes you don't need others screens or components rerender because you just modify a part of the state then instead of using redux state is better to use **useState hook** so you just rerender the component where its **_local_** state changes
 
 <h3>Why did I decide to use this structure ?</h3>
 
