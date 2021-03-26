@@ -53,13 +53,13 @@ example:
 
 <h2>STRUCTURE EXPLANATION</h2>
 
-<h4>Why do I use "useState hook" instead of "redux" sometimes?</h4>
+<h3>Why do I use "useState hook" instead of "redux" sometimes?</h3>
 
 the answer is because redux is based on **Observer pattern** which means that when you update the store all components that are listening to redux state are gonna rerender again with the new state.
 
-so sometimes you don't need others screens or components rerender because you just modify a part of the state then instead of using redux state is better to use useState hook so you just rerender the component where the state changes
+so sometimes you don't need others screens or components rerender because you just modify a part of the state then instead of using redux state is better to use **useState hook** so you just rerender the component where its state changes
 
-<h4>Why did I decide to use this structure ?</h4>
+<h3>Why did I decide to use this structure ?</h3>
 
 * it's because I found usefull to separate the use of libraries and not mix it all so as when I have to make an update I know exactly where to go
 * this way to organize also helps me a lot when I find a bug cause just looking at the folder name I know exactly where the error is
